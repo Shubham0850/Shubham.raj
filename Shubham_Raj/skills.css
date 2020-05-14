@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    color: rgb(49, 43, 43);
+}
+
+.skill, .head{
+    width: 90%;
+    margin: 0px auto;
+}
+.skill-div img{
+    width: 30px;
+    margin-right: 10px;
+}
+.skill-div ul{
+    width: 90%;
+    margin: 0px auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skill-div ul li{
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+@media only screen and ( min-width: 701px ){
+    .tech{
+        display: flex;
+        flex-direction: column;
+    }
+    .skill-div ul li{
+        margin: 5px;
+        max-width: 300px;
+    }
+    .skill-div{
+        align-items: baseline;
+    }
+}

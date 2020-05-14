@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    
+}
+
+body{
+    background: #ededed;
+    
+}
+.hom{
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #323232;
+    font-weight: 500;
+    font-size: 18px;
+}
+a:hover{
+    color: black;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    padding: 8px 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    
+}
+.hire-me-btn h2{
+    font-weight: 400;
+}
+
+.coding-back{
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    z-index: -1;
+    opacity: 0.2;
+    width: 100px;
+    -webkit-animation:spin 5s linear infinite;
+    -moz-animation:spin 5s linear infinite;
+    animation:spin 5s linear infinite;
+}
+.skill-back{
+    position: absolute;
+    top: 20vh;
+    right: 20px;
+    z-index: -1;
+    opacity: 0.2;
+    width: 95px;
+    -webkit-animation:spin 5s linear infinite;
+    -moz-animation:spin 5s linear infinite;
+    animation:spin 5s linear infinite;
+}
+
+.btn button{
+    margin: 10px 25px 0px 0px;
+}
+
+.my-work-btn{
+    background: rgb(154, 199, 154);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+.my-work-btn:hover{
+    animation: gradient 5s ease infinite;
+}
+
+.hire-me-btn{
+    background: rgb(158, 206, 198);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.social img{
+    opacity: 0.8;
+    margin-right: 20px;
+}
+.social img:hover{
+    opacity: 1;
+}
+.location{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    color: #323232;
+    margin-bottom: 10px;
+}
+.location img{
+    opacity: 0.8;
+    width: 20px ;
+    height: 20px;
+    margin-right: 5px;
+}
+.poligon{
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -5;
+}
+.poligon2{
+    width: 48%;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -5;
+}
+/*  css for resume  */
+.main-div{
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+}
+.my-image{
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(120deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2)),url("./images/shubham.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0px auto;
+}
+.social img{
+    width: 30px;
+    opacity: 0.8;
+    margin-right: 10px;
+}
+.contact img{
+    width: 30px;
+    opacity: 0.8;
+    margin-right: 10px;
+}
+.main-div p{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px auto;
+}
+.intro-resume{
+    text-align: center;
+}
+.intro-resume p{
+    margin: 0;
+    padding: 0;
+}
+
+/*  CSS for small screen device i.e. for mobile device  */
+@media only screen and ( max-width: 700px ){
+    body{
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+    .location{
+        margin: 5px auto;
+        justify-content: center;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+        padding: 10px;
+        opacity: 0.7;
+        margin-bottom: 20px;
+    }
+    .logo img{
+        width: 80px;
+    }
+    .intro-image1{
+        width: 200px;
+        height: 200px;
+        background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("./images/shubham.jpg");
+        background-size: cover;
+        border: 2px solid grey;
+        border-radius: 51% 49% 39% 61% / 32% 50% 50% 68% ;
+        border: 2px solid grey;
+        animation: morphing 15s infinite;
+    }
+
+    .intro-image{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .h-btn{
+        display: none;
+    }
+    .components{
+        width: 100%;
+    }
+    .components ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        align-items: center;
+    }
+    .poligon{
+        width: 60%;
+    }
+    .poligon2{
+        width: 100%;
+        height: 65%;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .intro-text h1{
+        font-size: 40px;
+        color: #323232; 
+    }
+    .intro-text h2{
+        font-size: 50px;
+        color: #323232; 
+    }
+
+    .intro-text p{
+        font-size: 20px;
+        color: #323232; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .btn button{
+        margin: 10px 20px;
+    }
+
+    .coding-back{
+        position: absolute;
+        top: 200px;
+        right: 20px;
+    }
+    .skill-back{
+        top: 65px;
+    }
+    .code-boy{
+        position: absolute;
+        right: 10px;
+    }
+    .courses{
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/*  CSS for medium size screen device  i.e. for tablets   
+@media only screen and ( min-width: 701px and max-width: 900px){
+
+}
+*/
+/*  CSS for large size screen device i.e. for laptop and desktop  */
+@media only screen and ( min-width: 901px ){
+    .menu{
+        display: none;
+    }
+    .intro-image1{
+        display: none;
+    }
+    /* navigation bar css  */
+    .nav{
+        width: 100%;
+        height: 15vh;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .components{
+        width: 70%;
+    }
+    .components ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        list-style: none;
+    }
+
+    .main{
+        width: 100%;
+        height: 85vh;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .intro-text h1{
+        font-size: 50px;
+        color: #323232; 
+    }
+    .intro-text h2{
+        font-size: 60px;
+        color: #323232; 
+    }
+
+    .intro-text p{
+        font-size: 20px;
+        color: #323232; 
+        display: flex;
+        align-items: center;
+    }
+
+    .intro-text p img{
+        margin: 0px 10px;
+    }
+
+    .intro-image{
+        width: 350px;
+        height: 350px;
+        background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("./images/shubham.jpg");
+        background-size: cover;
+        border-radius: 51% 49% 39% 61% / 32% 50% 50% 68% ;
+        border: 2px solid grey;
+        animation: morphing 15s infinite;
+    }
+
+    .btn{
+        display: flex;
+    }
+
+
+    .hire-me-btn:hover{
+        animation: gradient 5s ease infinite;
+    }
+
+    /*  Skills CSS  */
+    .tech{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .non-tech{
+        width: 50%;
+    }
+    .skill-div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes morphing {
+    0% {
+        border-radius: 77% 23% 70% 30% / 41% 51% 49% 59% 
+        box-shadow 15px 15px 50px rgba(0,0,0,0.2)
+    }
+    25% { 
+        border-radius: 37% 63% 39% 61% / 72% 42% 58% 28% 
+    }
+    50% {
+        border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%
+        box-shadow -10px -5px 50px rgba(0,0,0,0.2)
+    }
+    75% {
+        border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%		
+    }
+}

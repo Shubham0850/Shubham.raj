@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    color: rgb(49, 43, 43);
+}
+.projects h1{
+    width: 90%;
+    margin: 0 auto;
+}
+.p-card{
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+.p-card img{
+    width: 100%;
+    border-radius: 10px;
+}
+@media only screen and ( min-width: 701px ){
+    .p-card{
+        width: 300px;
+    }
+    .first{
+        display: flex;
+        align-items: center;
+    }
+}
